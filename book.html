@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+       <meta charset="UTF-8">
+       <title> Find us - Pause Coffee </title>
+
+       <link rel="stylesheet" href="reset.css">
+       <link rel="stylesheet" href="style.css">
+
+       <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    </head>
+
+    <body> 
+        <header>
+            <div class="header-box"> 
+
+                <nav class="nav1">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                    </ul>
+                </nav>
+
+                <img src="logo-pinkish.png" alt="Coffe Shop Pausa Logo" class="logo">
+
+                <nav class="nav2">
+                    <ul>
+                        <li><a href="find-us.html">Find us</a></li>
+                        <li><a href="book.html">Book a table</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <img class="banner" src="header2.jpeg" alt="Coffee beans in a light yellow background">
+        </header>
+
+        <main>
+
+            <section class="contact-us"> 
+                <h2>Contact us and book a table!</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="contact-input" required placeholder="Nome of the responsable">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" class="contact-input" required placeholder="Contact to confirmation">
+
+                    <label for="booking-date">Date of the booking</label>
+                    <input type="date" id="booking-date" name="trip-start" value="2022-08-09" min="2022-08-09" max="2022-12-31">
+
+                    <label for="booking-time">Choose a time for your booking</label>
+                    <input type="time" id="booking-time" name="booking-time" min="09:00" max="18:00" required>
+                    <small>Please attention to the working times of each store!</small>
+
+                    <fieldset class="store-choosing"> 
+                        <legend>In which store should be your booking?</legend>
+                        <label for="radio-frankfurt"><input type="radio" name="store" value="frankfurt" id="radio-frankfurt" checked> Frankfurt am Main</label>
+    
+                        <label for="radio-hamburg"><input type="radio" name="store" value="hamburg" id="radio-hamburg"> Hamburg</label>
+    
+                    </fieldset>
+
+                    <label for="message">Details to the reservation</label>
+                    <textarea cols="70" rows="10" id="message" class="contact-input" required placeholder="Tell us important information like how many people come and if is there any special wishes"></textarea>
+
+                    <input type="submit" name="contato" value="Send" class="send-button">
+                </form>
+            </section>
+        </main>
+
+        <section class="booking-inside">
+            <h2>Check our delicious menu!</h2>
+            <p>Breakfast, lunch or a brunch, we have everything for every ocasion!</p>
+            <button class="button-book"><a href="menu.html">click here!</a></button>
+         </section>
+
+        <footer>
+            <div class="footer-content"> 
+                <img src="logo-pinkish.png">
+                <p>&copy; Copyright Giovanna Lima - 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
